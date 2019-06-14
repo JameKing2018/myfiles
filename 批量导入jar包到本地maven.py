@@ -14,7 +14,7 @@ for  file in files:
     # 文件名
     filename=file
     # 包名
-    jarName=file.split('-')[0]
+    jarName=file.replace('-'+file.split('-')[-1],'') 
     # groupId
     groupId='bcjy.tjj'
     # artifactId
